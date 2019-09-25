@@ -1,23 +1,44 @@
-header, main, footer {
+body{
+    font-family: 'News Cycle', sans-serif;
+
+
+}
+
+
+ main, footer {
     text-align: center;
     margin: auto;
-    width: 1010px;
+    width: 1000px;
+}
+h1{
+    margin-left: 6.5rem;
+    margin-right: 10rem;
 }
 li {
     display: inline-block;
+    margin:0 1rem 0 1rem
+
+}
+
+li:first-child{
+    color:#27AE61
 }
 nav h1, nav ul {
     display: inline-block;
 }
 nav {
     background-color: #EEEEEE;
+    width: 1000px;
+    margin:auto;
 }
 section {
     background-color: #27AE61;
-    height: 32rem;
+    color:white;
+    background-image: url(images/banner.png)
+    
 }
 article {
-    height: 21.3333333333em;
+    
 }
 footer {
     background-color: #EEEEEE;
@@ -25,19 +46,45 @@ footer {
 h2 {
     padding-top: 3rem;
     margin-top: 0rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h3{
+    font-size:0.9rem;
+    opacity:0.70 ;
 }
 .a1 {
     background-color: #EEEEEE;
 }
+.a1 h3, .a1 p{
+    color: #2b3f48;
+}
 .a3 {
     background-color: #27AE61; 
+    color:white;
+}
+
+main p {
+    margin:0 5rem 0 5rem;
 }
 footer > p {
     margin: 0rem;
     padding: 2rem 0 2rem 0;
 }
 img {
-    padding: 3rem 1rem 0 1rem; 
+    margin: 3rem 0.5rem 2rem 0.5rem ;
     border-radius: 50%;
-    width: 10lh;
+    width:9rem;
+    height:auto;
+    
+}
+
+main a{
+    background-color:blue;
+    border-radius: 5px;
+    padding:0.5rem 3rem 0.5rem 3rem;
+    margin-top:3rem;
+    margin-bottom: 4rem;
+    display: inline-block
 }
