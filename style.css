@@ -1,25 +1,25 @@
 body{
+    margin: 0;
     font-family: 'News Cycle', sans-serif;
-
-
 }
-
-
  main, footer {
     text-align: center;
     margin: auto;
-    width: 1000px;
+    max-width: 1000px;
 }
 h1{
     margin-left: 6.5rem;
     margin-right: 10rem;
+}
+li a {
+    color: #2b3f48;
+    text-decoration: none;
 }
 li {
     display: inline-block;
     margin:0 1rem 0 1rem
 
 }
-
 li:first-child{
     color:#27AE61
 }
@@ -28,7 +28,7 @@ nav h1, nav ul {
 }
 nav {
     background-color: #EEEEEE;
-    width: 1000px;
+    max-width: 1000px;
     margin:auto;
 }
 section {
@@ -37,8 +37,9 @@ section {
     background-image: url(images/banner.png)
     
 }
-article {
-    
+section a {
+    color: white;
+    background-color: #2b3f48;
 }
 footer {
     background-color: #EEEEEE;
@@ -49,13 +50,16 @@ h2 {
     font-size: 2rem;
     font-weight: bolder;
 }
-
 h3{
     font-size:0.9rem;
     opacity:0.70 ;
 }
 .a1 {
     background-color: #EEEEEE;
+}
+.a1 a {
+    color: white;
+    background-color: #27AE61; 
 }
 .a1 h3, .a1 p{
     color: #2b3f48;
@@ -64,9 +68,12 @@ h3{
     background-color: #27AE61; 
     color:white;
 }
-
+.a3 a {
+    color: #27AE61;
+    background-color: white;
+}
 main p {
-    margin:0 5rem 0 5rem;
+    padding:0 5rem 0 5rem;
 }
 footer > p {
     margin: 0rem;
@@ -76,15 +83,61 @@ img {
     margin: 3rem 0.5rem 2rem 0.5rem ;
     border-radius: 50%;
     width:9rem;
-    height:auto;
-    
+    height:auto;   
 }
-
 main a{
-    background-color:blue;
-    border-radius: 5px;
+    text-decoration: none;
+    border-radius: 7px;
     padding:0.5rem 3rem 0.5rem 3rem;
     margin-top:3rem;
     margin-bottom: 4rem;
     display: inline-block
+}
+#iii {
+    display: none;
+    top: 3%;
+    right: 2%;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 1023px) {
+    nav ul {
+        display: none;
+        margin: 0;
+    }
+    img:not(:last-child)  {  
+        display:none;
+        margin:auto;
+        padding: 0.5rem;
+    }
+    img {
+        width: 80%;
+    }
+    #iii {
+        display: initial;
+
+    }
+    h1 {
+        margin-left: 2.5rem;
+    }
+    li {
+        margin-right: 2.5rem;
+        display: block;
+        text-align: center;
+    }
+    li:not(:last-child) {
+        margin-bottom: 0.5rem;
+        border-bottom : solid rgb(226, 226, 226) 3px;
+    }
+    ul {
+        padding-bottom: 1rem;
+    }
+    section, article {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    main p {
+        padding:0;
+    }
+    h2 {
+        padding: 0;
+    }
 }
