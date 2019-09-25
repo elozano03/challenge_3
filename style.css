@@ -1,0 +1,43 @@
+header, main, footer {
+    text-align: center;
+    margin: auto;
+    width: 1010px;
+}
+li {
+    display: inline-block;
+}
+nav h1, nav ul {
+    display: inline-block;
+}
+nav {
+    background-color: #EEEEEE;
+}
+section {
+    background-color: #27AE61;
+    height: 32rem;
+}
+article {
+    height: 21.3333333333em;
+}
+footer {
+    background-color: #EEEEEE;
+}
+h2 {
+    padding-top: 3rem;
+    margin-top: 0rem;
+}
+.a1 {
+    background-color: #EEEEEE;
+}
+.a3 {
+    background-color: #27AE61; 
+}
+footer > p {
+    margin: 0rem;
+    padding: 2rem 0 2rem 0;
+}
+img {
+    padding: 3rem 1rem 0 1rem; 
+    border-radius: 50%;
+    width: 10lh;
+}
